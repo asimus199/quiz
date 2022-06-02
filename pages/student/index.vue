@@ -26,7 +26,7 @@
       </div>
       <div class="accounts">
         <vs-card-group>
-          <vs-card v-for="(quiz, i) of getCourseQuiz(course)" :key="quiz.id" @click="$router.push(`/teacher/test-edit/${quiz.id}`)">
+          <vs-card v-for="(quiz, i) of getCourseQuiz(course)" :key="quiz.id">
             <template #title>
               <h3>{{ quiz.title }}</h3>
             </template>

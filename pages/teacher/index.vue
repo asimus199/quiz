@@ -1,5 +1,9 @@
 <template>
   <div>
+
+    <div class="courses-item" style="text-align: center">
+      <h4>Тесты</h4>
+    </div>
     <div class="courses">
       <div class="courses-item" style="margin-right: 10px">
         <b>Показать:</b>

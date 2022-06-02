@@ -1,4 +1,4 @@
-const apiUrl = process.env.NODE_ENV === 'production' ? 'https://api.bananagram.ru' : 'http://localhost:3001';
+const apiUrl = process.env.NODE_ENV === 'production' ? 'https://school174-api.herokuapp.com' : 'http://localhost:3001';
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode

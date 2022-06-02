@@ -16,6 +16,7 @@ RUN npm install
 # since it builds the server as well
 RUN npm run build
 
+ENV HOST 0.0.0.0
 # expose 5000 on container
 EXPOSE 3000
 
@@ -25,4 +26,4 @@ ENV NUXT_HOST=0.0.0.0
 ENV NUXT_PORT=3000
 
 # start the app
-CMD ["npm", "run", "start"]
+CMD ["npm", "start"]

@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "sourceMap": false,
+    "target": "es5",
+    "module": "es6",
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "lib": ["esnext", "dom"],
+    "rootDir": ".",
+    "types": ["@nuxt/types", "@nuxtjs/device"]
+  },
+  "include": [
+    "**/*",
+    "./vueasimus/**/*"
+  ],
+  "types": [
+    "@types/lodash",
+  ],
+  "rules": {
+    "interface-name" : [true, "never-prefix"]
+  }
+}
+

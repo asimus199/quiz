@@ -1,0 +1,28 @@
+version: "3.2"
+
+services:
+  bananagram-app:
+    image: bananagram-app
+    container_name: bananagram-app
+    restart: unless-stopped
+
+    # We specify the image for this service and where we can build that image from
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    # We can use these volumes to specify where we want our files to be accessible at.
+    # It's best to house all node modules on a separate volume
+    volumes:
+      - "/usr/src/services/app"
+      - "/usr/src/services/app/node_modules"
+    ports:
+      - "3000:3000"
+    networks:
+      app-network:
+    # For Windows, we need to enable Chokidar polling so our file changes reflect in real-time.
+    environment:
+      - CHOKIDAR_USEPOLLING=1
+networks:
+  app-network:
+    external: true

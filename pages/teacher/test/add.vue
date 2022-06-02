@@ -38,6 +38,13 @@
             </template>
           </vs-input>
 
+          <span>Картинка:</span>
+          <vs-input autocomplete="new-password" placeholder="Картинка" v-model="image">
+            <template #icon>
+              <i class='bx bx-text'></i>
+            </template>
+          </vs-input>
+
           <span>Название:</span>
           <vs-input autocomplete="new-password" placeholder="Название" v-model="title">
             <template #icon>
@@ -72,6 +79,7 @@ export default {
   data:() => ({
     is_loading: false,
     title: '',
+    image: '',
     description: '',
     classNumber: '',
     course: ''
@@ -82,6 +90,7 @@ export default {
         this.is_loading = true
         const quiz = await this.$axios.$post('/quiz', {
           title: this.title,
+          image: this.image,
           description: this.description,
           classNumber: +this.classNumber,
           course: this.course,

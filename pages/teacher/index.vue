@@ -37,7 +37,7 @@
               <h3>{{ quiz.title }}</h3>
             </template>
             <template #img>
-              <img :src="`https://vuesax.com/foto${i+1}.png`" alt="">
+              <img :src="quiz.image" alt="">
             </template>
             <template #text>
               <p>

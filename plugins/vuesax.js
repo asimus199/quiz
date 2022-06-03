@@ -5,6 +5,6 @@ import 'boxicons/css/boxicons.min.css'
 
 Vue.use(Vuesax, {
   colors: {
-    primary: '#fcdc0b'
+    primary: '#494949'
   }
 })

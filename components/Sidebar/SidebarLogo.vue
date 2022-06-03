@@ -1,7 +1,7 @@
 <template>
   <div class="top-logo">
     <span>
-      <b><font color="#fcdc0b">Система</font><br>тестирования</b>
+      <b><font>Система</font><br>тестирования</b>
     </span>
 <!--    <span style="font-size: 24px">-->
 <!--      Service-->

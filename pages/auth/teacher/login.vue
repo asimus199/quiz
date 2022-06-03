@@ -23,7 +23,7 @@
       </div>
       <div class="con-form role-avatar">
         <vs-avatar size="70" badge badge-color="success">
-          <i class='bx bxs-cool'></i>
+          <i class='bx bxs-user-account'></i>
         </vs-avatar>
       </div>
 

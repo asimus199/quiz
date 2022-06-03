@@ -34,13 +34,12 @@ export default {
 
 .middle {
   width: 100%;
-  height: 100%;
 
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 20px;
+  padding: 50px 20px;
   box-sizing: border-box;
 }
 .auth-block {
@@ -51,7 +50,7 @@ export default {
   padding: 20px;
   align-self: center;
   max-width: 420px;
-  min-width: 350px;
+  min-width: 305px;
   width: 100%;
   border-radius: 20px;
   box-sizing: border-box;

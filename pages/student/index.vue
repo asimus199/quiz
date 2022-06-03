@@ -8,12 +8,12 @@
         <b>Показать:</b>
       </div>
       <div class="courses-item">
-        <vs-button :warn="activeCourse !== 'all'" :flat="activeCourse !== 'all'" @click="activeCourse = 'all'">
+        <vs-button :flat="activeCourse !== 'all'" @click="activeCourse = 'all'">
           Все
         </vs-button>
       </div>
       <div class="courses-item" v-for="(courseName, course) in courses">
-        <vs-button :warn="activeCourse !== course" :flat="activeCourse !== course" @click="activeCourse = course">
+        <vs-button :flat="activeCourse !== course" @click="activeCourse = course">
           {{ courseName }}
         </vs-button>
       </div>

@@ -5,7 +5,6 @@
         <div class="back-button">
           <vs-button
               icon
-              color="warn"
               flat
               @click="$router.back()"
           >
